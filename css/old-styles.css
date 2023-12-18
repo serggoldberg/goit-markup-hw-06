@@ -297,16 +297,15 @@ img {
   font-weight: 400;
   max-width: 264px;
 }
-
+.advantages {
+  width: calc((100% - 72px) / 4);
+}
 /* three */
 .team-section {
   background-color: var(--c-white-text);
   padding: 120px 0;
 }
 
-.advantages {
-  width: calc((100% - 72px) / 4);
-}
 
 .hero-team-title {
   font-size: 36px;
