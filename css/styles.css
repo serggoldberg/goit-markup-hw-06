@@ -48,6 +48,8 @@ h3 {
   
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -286,7 +288,7 @@ text-decoration: none;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('./images/versions/Dark-bgM@1x.jpg');
+    url('../images/versions/Dark-bgM@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -303,7 +305,7 @@ screen and (min-device-pixel-ratio: 2) {
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ),url('./images/versions/Dark-bgM@2x.jpg');
+      ),url('../images/versions/Dark-bgM@2x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -362,10 +364,7 @@ screen and (min-device-pixel-ratio: 2) {
 .advantages-icon{
   display: none;
 }
-.advantages-section{
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+
 .advantages-list {
   display: flex;
   justify-content: center;
@@ -541,7 +540,6 @@ screen and (min-device-pixel-ratio: 2) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 288px;
 }
 .portfolio-card:hover .overlay-text {
   transform: translateY(0);
@@ -1084,11 +1082,12 @@ screen and (min-device-pixel-ratio: 2) {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('./images/versions/Dark-bgT@1x.jpg');
+    url('../images/versions/Dark-bgT@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 112px 0;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: 0 auto;
   }
 
@@ -1101,11 +1100,12 @@ screen and (min-device-pixel-ratio: 2) {
           to bottom,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
-        ),url('./images/versions/Dark-bgT@2x.jpg');
+        ),url('../images/versions/Dark-bgT@2x.jpg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      padding: 112px 0;
+      padding-top: 112px;
+      padding-bottom: 112px;
       max-width: 768px;
       margin: 0 auto;
     }
@@ -1132,6 +1132,7 @@ screen and (min-device-pixel-ratio: 2) {
     .advantages-icon{
     display: none;
   }
+  
   .advantages {
     width: calc((100% - 24px) / 2);
   }
@@ -1149,7 +1150,9 @@ screen and (min-device-pixel-ratio: 2) {
     align-content: flex-start;
     gap: 24px;
     row-gap: 72px;
+    
   }
+
   .advantages-title {
     color: var(--c-background);
     font-size: 36px;
@@ -1695,7 +1698,7 @@ screen and (min-device-pixel-ratio: 2) {
     margin-left: auto;
     margin-right: auto;
   }
-  }
+  
   @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
@@ -1713,6 +1716,7 @@ screen and (min-device-pixel-ratio: 2) {
       margin: 0 auto;
     }
   }
+}
 
   /*================SECTION 1==========*/
   @media screen and (min-width: 1158px){
@@ -1811,7 +1815,7 @@ screen and (min-device-pixel-ratio: 2) {
     gap: 24px;
     flex-wrap: wrap;
     row-gap: 48px;
-    
+
   }
   
   .portfolio-card {
